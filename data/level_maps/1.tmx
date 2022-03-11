@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="62" height="44" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="5">
+ <tileset firstgid="1" source="megacommando.tsx"/>
+ <layer id="1" name="Слой тайлов 1" width="62" height="44">
+  <data encoding="base64" compression="zlib">
+   eJztmF9uwjAMxtMegdsA41pIbZF43Y0m4GXnQiDRas3qhfxxZjclxA+fRCrT+Jcmzpd0tVJdAToYWjof4RZu4V6GW8e0oN38o217bxvo25VPTH9N/czi4j5Y4naVUl/1X50rtz6qn3fsPDEwFuZt/qaMcyy3qWOvzwqn60p9NyN3h4x9B+5BWG4dmxv3utdm1DbA7YvNjXsP+wXPT+PavRh8tthX5r6r6VtB3ZSdxTWfXdyuvWNpblS/hXK75kRobrzyPOfwLfA9wj3VQIq0T8qJmyrok3Lg7vNlY8+FO1QDMbJ5H25ueC6hrkUumZ6orac6yMUd689TS7jTccPzBtd6zYFb+09K3cP4XGw9h/c4rYeLyq19x+AdSuKGfVO4KXvb4P3n2L9TcMe0fR6Bg1vfC148vGsw5lQu7Dlkbu7Y70zldjFhxmEJbpZ6DhhC/zFz5ubWtca3t3KcI2POm40lZ4zmqmsp9HtPOwO3TaVyc5wbOaT36VTc7yDhFu4SJNzCXYKEW7hLkMn9AD9sS1Y=
+  </data>
+ </layer>
+ <layer id="3" name="decoration" width="62" height="44" opacity="0.95">
+  <data encoding="base64" compression="zlib">
+   eJzt2E0KgkAUB/DXKlzISN7ADlAHsF0HcVetukIQQZ+HaKWdIwya6kYFPXFAE83sQyH/P3iMijj+dRZPiQAAAP7fWhBtuOYNog6PXVH1HZXjzDkvKvdYjWn6BjmvXrPIuVUZcNYh10hE774OXM7pce1E9O4BAACynJpEt1ZYV1XBdnD8X3DfMkkes02inirbjPallnkN57d3CXWU16MeeD3OtMdxpWqqhevVV/tZa/fZHFX1yHk9qlSZgrz7WH6ZeA6+2i46B3pkAAAAgHSuTuTp3/ketLjfanNtuayUb7KkhUG0ND6f9x3x/6llO3JmWVFuAAAAAIAy3QFeBjtk
+  </data>
+ </layer>
+</map>
