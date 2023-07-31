@@ -149,7 +149,8 @@ def playing_process(level_name: str, screen, cursor_image):
             item.kill()
             group.clear(screen, background)
 
-    start_music(filename="background_main.mp3")
+    if sound_play:
+        start_music(filename="background_main.mp3")
 
     gameover_window = GameoverWindow()
     restart_button = Button(
@@ -284,17 +285,19 @@ def main():
         rect=pygame.rect.Rect(int(WIDTH * 0.1) - 70 // 2, int(HEIGHT * 0.8), 70, 70),
         image2=pygame.transform.scale(load_image(f"{BACKGROUNDS_DIR}/sound_off_button2.png", color_key=-1), (70, 70)))
     market_btn = Button(
-        image=pygame.transform.scale(load_image(f"{BACKGROUNDS_DIR}/dollar.jpg", color_key=-1), (70, 70)),
+        image=pygame.transform.scale(load_image(f"{BACKGROUNDS_DIR}/dollar.png", color_key=-1), (70, 70)),
         rect=pygame.rect.Rect(int(WIDTH * 0.3) - 70 // 2, int(HEIGHT * 0.8), 70, 70))
 
     pygame.mouse.set_visible(False)
     cursor_image = load_image(f"{BACKGROUNDS_DIR}/cursor.png", color_key=-1)
 
+    global sound_play
+
     start_music(filename="background_menu.mp3")
 
     try:
+
         running = True
-        sound_play = True
         while running:
             event_list = pygame.event.get()
             for event in event_list:
@@ -336,6 +339,8 @@ def main():
                 while result:
                     result = playing_process(str(LEVELS_NAMES.index(level_name) + 1), screen, cursor_image)
                 start_music(filename="background_menu.mp3")
+                if not sound_play:
+                    pygame.mixer.music.pause()
 
             screen.blit(background, (0, 0))
             screen.blit(computer_images[level_name], (128, 120))
